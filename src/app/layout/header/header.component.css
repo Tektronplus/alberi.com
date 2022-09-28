@@ -1,0 +1,23 @@
+#main-header {
+	height: 100%;
+	width: 100%;
+
+	background-image: url("../../shared/images/header-img/hero-image.jpeg");
+	background-repeat: no-repeat;
+	background-size: auto 125%;
+	background-position: center;
+
+	display: grid;
+	grid-template-rows: 64px 1fr;
+	grid-template-areas:
+		"navbar"
+		"hero-image";
+}
+
+app-navbar {
+	grid-area: navbar;
+}
+
+app-hero-image {
+	grid-area: hero-image;
+}
