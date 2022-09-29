@@ -1,0 +1,15 @@
+#main-home {
+	display: grid;
+	grid-template-rows: calc(100vh - 72px) 1000px;
+	grid-template-areas:
+		"hero-image"
+		"test-div";
+}
+
+app-hero-image {
+	grid-area: hero-image;
+}
+
+#test-div {
+	grid-area: test-div;
+}

@@ -1,3 +1,10 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
+:root {
+	--primary-color: 30, 50, 24;
+	--secondary-color: 249, 248, 113;
+	--tertiary-color: 243, 252, 240;
+}
 /* You can add global styles to this file, and also import other style files */
 html {
 	width: 100%;

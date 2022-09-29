@@ -1,0 +1,25 @@
+:host {
+	--height-logo: 40px;
+}
+nav {
+	background-color: rgb(var(--primary-color));
+}
+
+#logo {
+	height: var(--height-logo);
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#logo-img {
+	height: var(--height-logo);
+	width: var(--height-logo);
+}
+
+#logo-text {
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	font-size: var(--height-logo);
+	font-weight: 300;
+}
