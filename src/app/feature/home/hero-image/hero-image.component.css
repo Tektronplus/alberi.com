@@ -10,12 +10,6 @@
 			rgba(var(--primary-color), 0.1) 11%,
 			rgba(var(--primary-color), 0) 100%
 		),
-		linear-gradient(
-			180deg,
-			rgba(var(--primary-color), 1) 0%,
-			rgba(var(--primary-color), 0.1) 11%,
-			rgba(var(--primary-color), 0) 100%
-		),
 		url("../../../../assets/images/home/hero-image.jpeg");
 	background-repeat: no-repeat;
 	background-size: auto 100%;

@@ -12,4 +12,5 @@ app-hero-image {
 
 #test-div {
 	grid-area: test-div;
+	background-color: rgb(var(--secondary-color));
 }

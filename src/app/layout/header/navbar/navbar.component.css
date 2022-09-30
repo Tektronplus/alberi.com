@@ -7,10 +7,12 @@ nav {
 
 #logo {
 	height: var(--height-logo);
+	padding: 0px 10px;
 
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	gap: 0px 10px;
 }
 #logo-img {
 	height: var(--height-logo);
@@ -20,6 +22,6 @@ nav {
 #logo-text {
 	margin: 0;
 	font-family: "Montserrat", sans-serif;
-	font-size: var(--height-logo);
+	font-size: 30px;
 	font-weight: 300;
 }

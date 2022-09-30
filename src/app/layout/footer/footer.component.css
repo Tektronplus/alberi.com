@@ -1,5 +1,134 @@
-div {
+/* Some variables are in "style.css" file in the :root section */
+:host {
+	--height-copyright: 30px;
+	--height-logo: 3em;
+}
+
+p {
+	margin: 0;
+	color: rgb(var(--text-color));
+	font-family: var(--font-family);
+	font-weight: var(--font-weight-m);
+	font-size: var(--font-size-m);
+}
+
+a {
+	text-decoration: none;
+}
+
+#main-footer {
+	background-color: rgb(var(--primary-color));
 	height: 100%;
 	width: 100%;
-	background-color: blue;
+
+	/* Layout */
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr var(--height-copyright);
+	grid-template-areas:
+		"logo-ft menu-ft contacts-ft"
+		"copyrights-ft copyrights-ft copyrights-ft";
+}
+
+/* --  Logo footer -- */
+#div-logo-footer {
+	grid-area: logo-ft;
+
+	/* Layout */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+#a-logo-footer {
+	/* Layout */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+#img-logo-footer {
+	height: var(--height-logo);
+	width: var(--height-logo);
+}
+#p-logo-footer {
+	font-size: var(--height-logo);
+}
+
+/* -- Menu & Contacts footer -- */
+.div-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#div-menu-footer {
+	grid-area: menu-ft;
+}
+
+#div-contacts-footer {
+	grid-area: contacts-ft;
+}
+
+.unordered-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.unordered-list > li {
+	padding: 0.5em;
+}
+.unordered-list > li > a > i {
+	/* Logos of socials */
+	color: rgb(var(--text-color));
+	font-size: var(--font-size-l);
+}
+
+#title-list {
+	font-weight: var(--font-weight-l);
+}
+
+#contacts-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#contacts-list > li {
+	flex-basis: 50%;
+}
+
+/* -- Copyrights-footer -- */
+#div-copyright-footer {
+	grid-area: copyrights-ft;
+
+	/* Layout */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+	/* Text copyright*/
+	text-align: center;
+	font-size: var(--font-size-s);
+}
+
+#div-copyright-footer > p {
+	color: rgb(var(--secondary-color));
+}
+
+@media screen and (max-width: 992px) {
+	#main-footer {
+		/* Layout */
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr calc(var(--height-copyright) * 2);
+		grid-template-areas:
+			"logo-ft logo-ft"
+			"menu-ft contacts-ft"
+			"copyrights-ft copyrights-ft";
+	}
 }
