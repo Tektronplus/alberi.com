@@ -1,4 +1,4 @@
-/* Some variables are in "style.css" file in the :root section */
+/* Some variables are in the "style.css" file in the :root section */
 :host {
 	--height-copyright: 30px;
 	--height-logo: 3em;

@@ -1,27 +1,85 @@
+/* Some variables are in the "style.css" file in the :root section */
 :host {
-	--height-logo: 40px;
+	--height-logo: 2em;
+	--height-hamburger: 3em;
 }
 nav {
+	padding: 10px 5px; /* This value depends on the header, currently 80px so 10px of padding */
 	background-color: rgb(var(--primary-color));
 }
+p {
+	margin: 0;
+	color: rgb(var(--text-color));
+	font-family: var(--font-family);
+	font-weight: var(--font-weight-m);
+	font-size: var(--font-size-m);
+}
 
-#logo {
+/* --- Logo --- */
+#a-logo-header {
 	height: var(--height-logo);
 	padding: 0px 10px;
 
+	/* Layout */
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	align-items: center;
-	gap: 0px 10px;
+	gap: 10px;
 }
-#logo-img {
+#a-logo-header > img {
 	height: var(--height-logo);
 	width: var(--height-logo);
 }
 
-#logo-text {
-	margin: 0;
-	font-family: "Montserrat", sans-serif;
-	font-size: 30px;
-	font-weight: 300;
+#a-logo-header > p {
+	font-size: var(--height-logo);
+}
+
+/* --- Navbar menu --- */
+#a-hamburger {
+	height: var(--height-hamburger);
+	width: var(--height-hamburger);
+
+	background-color: rgb(var(--primary-color));
+	text-decoration: none;
+
+	border-color: rgb(var(--tertiary-color));
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#a-hamburger > i {
+	color: rgb(var(--tertiary-color));
+	font-size: var(--height-logo);
+}
+
+#div-navbar-menu > ul > li > a > p {
+	color: rgb(var(--text-color));
+	font-size: var(--font-size-m);
+	font-weight: var(--font-weight-l);
+}
+
+#div-navbar-menu > ul > li {
+	padding: 0.5em;
+	text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+	#a-hamburger {
+		display: none;
+	}
+	#div-navbar-menu {
+		height: 60px;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	#div-navbar-menu > ul {
+		gap: 20px;
+	}
 }

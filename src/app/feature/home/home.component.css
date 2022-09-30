@@ -1,6 +1,6 @@
 #main-home {
 	display: grid;
-	grid-template-rows: calc(100vh - 72px) 1000px;
+	grid-template-rows: calc(100vh - 80px) 1000px;
 	grid-template-areas:
 		"hero-image"
 		"test-div";
