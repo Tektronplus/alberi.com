@@ -121,7 +121,7 @@ a {
 	color: rgb(var(--secondary-color));
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
 	#main-footer {
 		/* Layout */
 		grid-template-columns: 1fr 1fr;
